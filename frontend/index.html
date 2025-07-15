@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini Voice Assistant Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙</div>
+  <main class="gemini-app">
+    <header class="gemini-header">
+      <div class="gemini-logo">
+        <div class="logo-glow"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn860EFUd46VEPMUkGnK21qxLp79psrtJaPQ&s" alt="Gemini Avatar" />
+      </div>
+      <h1>Gemini</h1>
+      <button">
+        <svg viewBox="0 0 24 24" width="0" height="0" fill="none"><rect x="3" y="7" width="15" height="10" rx="2" stroke="#fff" stroke-width="2"/><path d="M21 7v10l-4-3.5V10.5L21 7z" fill="#fff"/></svg>
+      </button>
+    </header>
+    <section class="conversation" id="conversation">
+      <div class="bubble gemini">
+        👋 Hi! I’m Gemini. How can I help you today?
+      </div>
+      <div class="suggestions" id="suggestions">
+        <button>What’s the weather?</button>
+        <button>Summarize this article</button>
+        <button>Create a quiz</button>
+      </div>
+    </section>
+    <footer class="footer-new">
+       <button class="mic-btn" id="micBtn" aria-label="Voice input">
+        <div class="voice-3d" id="voiceWave">
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+        </div>
+        <svg class="mic-icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-width="2"/>
+          <rect x="10" y="6" width="4" height="8" rx="2" fill="#fff"/>
+          <rect x="11" y="15" width="2" height="3" rx="1" fill="#fff"/>
+        </svg>
+      </button>
+    </footer>
+    <!-- <footer class="input-area"> -->
+     
+      <!-- <input class="input-bar" id="inputBar" placeholder="Ask Gemini..." autocomplete="off" />
+      <button class="send-btn" id="sendBtn" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 21l21-9-21-9v7l15 2-15 2v7z" fill="#fff"/></svg>
+      </button> -->
+    <!-- </footer> -->
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
